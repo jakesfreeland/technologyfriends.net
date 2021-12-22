@@ -6,61 +6,28 @@
 		<link rel="stylesheet" href="/styles/blog.css">
 		<link rel="stylesheet" href="/fonts/fontawesome-free-5.15.3-web/css/all.css">
 		<script type="text/javascript" src="/scripts/navmenu-toggle.js"></script>
+		<script type="text/javascript" src="/scripts/jquery.js"></script>
+		<script>
+			$(function(){
+      	$("#included-header").load("header.html"); 
+    });
+			$(function(){
+      	$("#included-footer").load("footer.html"); 
+    });
+		</script>
 	</head>
 
 	<body>
 		<main>
-			<header>
-				<nav>
-					<div class="nav-mobile">
-						<div class="nav-logo">
-							<a href="/index.html"><img src="/images/TechFriends-HouseLogo.png"></a>
-						</div>
-
-						<button class="nav-menu">
-							<i class="fas fa-bars" onclick="toggleMenu()"></i>
-						</button>
-					</div>
-
-					<div class="nav-links" id="navLinks">
-						<ul>
-							<li><a href="/index.html">Home</a></li>
-							<li><a href="/html/company/courses.html">Group Courses</a></li>
-							<li><a href="/html/company/personal.html">Personal Help</a></li>
-							<li><a href="/html/blog/first.html">Blog</a></li>
-							<li><a href="/html/company/contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
+			<div class="header" id="included-header"></div>
 
 			<section class="content" id="content">
-				<p>this is a paragraph</p>
+        <h1>Sample Post 1</h1>
+        <p>This is a sample blog post.</p>
 			</section>
 
-			<footer>
-				<div class="footer-row">
-					<div class="footer-column">
-						<h3>Tech Friends</h3>
-						<ul>
-							<li><a href="/index.html">Home</a></li>
-							<li><a href="/html/company/courses.html">Group Courses</a></li>
-							<li><a href="/html/company/personal.html">Personal Help</a></li>
-							<li><a href="/html/company/contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-					<div class="footer-column">
-						<h3>Company</h3>
-						<ul>
-							<li><a href="/html/blog/home.html">Blog</a></li>
-							<li><a href="/html/company/partnerships.html">Work With Us</a></li>
-							<li><a href="/html/company/commitment.html">Open Source</a></li>
-						</ul>
-					</div>
-				</div>
+			<div class="footer" id="included-footer"></div>
 
-				<p>Powered by Debian, &#169; Tech Friends 2021</p>
-			</footer>
 		</main>
 	</body>
 </html>
