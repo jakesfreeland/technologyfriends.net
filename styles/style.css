@@ -220,13 +220,12 @@ html:not([data-scroll='0']) header {
     background-color: #1a1a1a;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 600px;
-    overflow: hidden;
 }
 
     .operation-left {
         box-sizing: border-box;
+        align-self: center;
         flex-basis: 50%;
         text-align: center;
         padding: 120px;
@@ -244,12 +243,11 @@ html:not([data-scroll='0']) header {
 
     .operation-right {
         flex-basis: 50%;
-        overflow: hidden;
     }
 
         .operation-right img {
-            min-height: 100%;
-            min-width: 100%;
+            height: 100%;
+            width: 100%;
             object-fit: cover;
         }
 

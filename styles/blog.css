@@ -1,5 +1,5 @@
 /*  
-    basic.css
+    blog.css
     Created by Jake Freeland (jakesfreeland@gmail.com)
     6/20/2021  
 */
@@ -151,18 +151,38 @@ header {
     flex: 1 1 auto;
 }
 
-    .content p {
-        margin-bottom: 40px;
-        padding-right: 45%;
+.featured-post {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+}
+
+    .featured-left {
+        flex-basis: 40%;
     }
 
-    .content ul {
-        margin-bottom: 40px;
-    }
-
-        .content ul li {
-            margin: 5px 0px 5px 20px;
+        .featured-left img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
+
+    .featured-right {
+        flex-basis: 60%;
+        padding: 20px;
+    }
+
+        .featured-right h3 {
+            color: #fff;
+            font-size: 26px
+        }
+
+        .featured-right p {
+            color: rgb(180, 180, 180);
+            margin: 20px 0 30px;
+        }
+
 
 /* Footer */
 footer {
