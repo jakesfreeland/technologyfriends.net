@@ -147,40 +147,34 @@ header {
 
 /* Content */
 .content {
-    margin: 20px 20px 80px 20px;
+    margin: 20px;
     flex: 1 1 auto;
 }
 
-.featured-post {
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    height: 220px;
-}
-
-    .featured-left {
-        flex-basis: 40%;
+    .featured-post {
+        display: flex;
+        background-color: #1a1a1a;
+        height: 200px;
+        margin-right: 45%;
     }
 
-        .featured-left img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+        .featured-left {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-    .featured-right {
-        flex-basis: 60%;
-        padding: 20px;
-    }
+            .featured-left img {
+                height: 90%;
+                width: 90%;
+                object-fit: cover;
+            }
 
-        .featured-right h3 {
+        .featured-right {
+            align-self: center;
+            padding: 20px;
             color: #fff;
-            font-size: 26px
-        }
-
-        .featured-right p {
-            color: rgb(180, 180, 180);
-            margin: 20px 0 30px;
         }
 
 
