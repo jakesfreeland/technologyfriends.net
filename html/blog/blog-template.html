@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog - Jake Freeland</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/styles/blog.css">
+		<link rel="stylesheet" href="/fonts/fontawesome-free-5.15.3-web/css/all.css">
+		<script type="text/javascript" src="/scripts/navmenu-toggle.js"></script>
+		<script type="text/javascript" src="/scripts/jquery.js"></script>
+		<script>
+			$(function(){
+      	$("#included-header").load("header.html"); 
+    });
+			$(function(){
+      	$("#included-footer").load("footer.html"); 
+    });
+		</script>
+	</head>
+
+	<body>
+		<main>
+			<div class="header" id="included-header"></div>
+
+			<section class="content" id="content">
+        <!--Blog content goes here-->
+			</section>
+
+			<div class="footer" id="included-footer"></div>
+
+		</main>
+	</body>
+</html>
