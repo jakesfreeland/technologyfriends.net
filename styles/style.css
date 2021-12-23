@@ -97,7 +97,6 @@ p {
 header {
     background-color: transparent;
     position: fixed;
-    top: 0;
     width: 100%;
 }
 
@@ -108,7 +107,7 @@ html:not([data-scroll='0']) header {
 
     /* Navigation */
     nav {
-        padding: 30px 4%;
+        padding: 30px 2%;
         display: flex;
         justify-content: space-between;
         align-items: center;
