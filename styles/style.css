@@ -44,6 +44,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 h1 {
     font-size: 36px;
     font-family: "opensans-bold";
@@ -149,7 +155,7 @@ html:not([data-scroll='0']) header {
 .intro {
     min-height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(149, 152, 161, 0.4),rgba(149, 152, 161, 0.4)),url(/images/banner.png);
+    background-image: linear-gradient(rgba(149, 152, 161, 0.4),rgba(149, 152, 161, 0.4)),url(/images/company/banner.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -293,6 +299,7 @@ footer {
     background-color: #111111;
     margin: auto;
     text-align: center;
+    width: 100%;
 }
 
     footer p {

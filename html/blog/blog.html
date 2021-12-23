@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blog - Jake Freeland</title>
+		<title>Tech Friends - Blog</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/styles/blog.css">
-		<link rel="stylesheet" href="/fonts/fontawesome-free-5.15.3-web/css/all.css">
 		<script type="text/javascript" src="/scripts/navmenu-toggle.js"></script>
 		<script type="text/javascript" src="/scripts/jquery.js"></script>
 		<script>
-			$(function(){
-      	$("#included-header").load("/html/blog/header.html"); 
-    	});
-			$(function(){
-      	$("#included-footer").load("/html/blog/footer.html"); 
-    	});
+			$(function(){ $("#included-header").load("/html/blog/templates/header.html"); });
+			$(function(){ $("#included-footer").load("/html/blog/templates/footer.html"); });
 		</script>
 	</head>
 
 	<body>
 		<main>
-			<section class="header" id="included-header"></section>
+			<header id="included-header"></header>
 
 			<section class="content" id="content">
 				<div class="blog-main">
@@ -74,7 +69,7 @@
 				</div>
 			</section>
 
-			<section class="footer" id="included-footer"></section>
+			<footer id="included-footer"></footer>
 		</main>
 	</body>
 </html>

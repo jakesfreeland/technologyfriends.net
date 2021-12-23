@@ -94,7 +94,7 @@ hr.rounded {
 }
 
 /* Header */
-.header {
+header {
     width: 100%;
     background-color: #1a1a1a;
     flex: 0 1 auto;
@@ -215,7 +215,7 @@ hr.rounded {
         }
 
 /* Footer */
-.footer {
+footer {
     background-color: #111111;
     margin: auto;
     text-align: center;
@@ -223,7 +223,7 @@ hr.rounded {
     flex: 0 1 auto;
 }
 
-    .footer p {
+    footer p {
         color: rgb(90, 90, 90);
         font-size: 14px;
         line-height: 22px;

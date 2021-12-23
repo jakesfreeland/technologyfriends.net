@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tech Friends - Personal Assistance</title>
+		<title>Tech Friends - Personal Help</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/styles/basic.css">
-		<link rel="stylesheet" href="/fonts/fontawesome-free-5.15.3-web/css/all.css">
 		<script type="text/javascript" src="/scripts/navmenu-toggle.js"></script>
+		<script type="text/javascript" src="/scripts/jquery.js"></script>
+		<script>
+			$(function(){ $("#included-header").load("/html/blog/templates/header.html"); });
+			$(function(){ $("#included-footer").load("/html/blog/templates/footer.html"); });
+		</script>
 	</head>
 
 	<body>
 		<main>
-			<header>
-				<nav>
-					<div class="nav-mobile">
-						<div class="nav-logo">
-							<a href="/index.html"><img src="/images/TechFriends-HouseLogo.png"></a>
-						</div>
+			<header id="included-header"></header>
 
-						<button class="nav-menu">
-							<i class="fas fa-bars" onclick="toggleMenu()"></i>
-						</button>
-					</div>
-
-					<div class="nav-links" id="navLinks">
-						<ul>
-							<li><a href="/index.html">Home</a></li>
-							<li><a href="/html/company/courses.html">Group Courses</a></li>
-							<li><a href="/html/company/personal.html">Personal Help</a></li>
-							<li><a href="/html/blog/first.html">Blog</a></li>
-							<li><a href="/html/company/contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-
-			<section class="content" id="personal">
+			<section class="content" id="content">
 				<h1>Personal Help</h1>
 				<h3>If group courses aren't for you, Tech Friends offers personal assistance:</h3>
 
@@ -74,29 +56,7 @@
 				</div>
 			</section>
 
-			<footer>
-				<div class="footer-row">
-					<div class="footer-column">
-						<h3>Tech Friends</h3>
-						<ul>
-							<li><a href="/index.html">Home</a></li>
-							<li><a href="/html/company/courses.html">Group Courses</a></li>
-							<li><a href="/html/company/personal.html">Personal Help</a></li>
-							<li><a href="/html/company/contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-					<div class="footer-column">
-						<h3>Company</h3>
-						<ul>
-							<li><a href="/html/blog/home.html">Blog</a></li>
-							<li><a href="/html/company/partnerships.html">Work With Us</a></li>
-							<li><a href="/html/company/commitment.html">Open Source</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<p>&#169; Tech Friends 2021</p>
-			</footer>
+			<footer id="included-footer"></footer>
 		</main>
 	</body>
 </html>
