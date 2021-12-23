@@ -180,6 +180,15 @@ footer {
         margin: 10px;
     }
 
+    footer a {
+        color:rgb(90, 90, 90);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
     .footer-row {
         background-color: #1a1a1a;
         display: flex;
