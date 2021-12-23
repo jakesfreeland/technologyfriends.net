@@ -85,6 +85,7 @@ p {
 
 a {
     font-family: inherit;
+    color:rgb(90, 90, 90);
 }
 
 hr.rounded {
@@ -207,7 +208,7 @@ header {
     }
 
         .post-months ul {
-            list-style-position: inside;
+            list-style: none;
         }
 
         .post-months a {
@@ -231,7 +232,6 @@ footer {
     }
 
     footer a {
-        color:rgb(90, 90, 90);
         text-decoration: none;
     }
 
