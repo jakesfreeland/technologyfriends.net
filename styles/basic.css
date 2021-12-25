@@ -39,14 +39,14 @@
     font-family: "opensans-regular";
 }
 
-html, body {
+html {
     height: 100%;
 }
 
-main {
+body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 h1 {
@@ -145,22 +145,22 @@ header {
                     font-family: "opensans-bold", sans-serif;
                 }
 
-/* Content */
-.content {
+/* Main */
+main {
     margin: 20px;
     flex: 1 1 auto;
 }
 
-    .content p {
+    main p {
         margin-bottom: 40px;
         padding-right: 45%;
     }
 
-    .content ul {
+    main ul {
         margin-bottom: 40px;
     }
 
-        .content ul li {
+        main ul li {
             margin: 5px 0px 5px 20px;
         }
 
@@ -256,12 +256,12 @@ footer {
                 margin: 10px 0px;
             }
 
-    /* Content */
-    .content p {
+    /* Main */
+    main p {
         padding-right: 0;
     }
 
-    .content hr.rounded {
+    main hr.rounded {
         margin-right: 0;
     }
 
